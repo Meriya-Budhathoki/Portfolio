@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weekly Articles | AI in Construction Portfolio</title>
+
+  <style>
+    :root {
+      --cream: #f5ead8;
+      --light-cream: #fff8ec;
+      --dark: #1f1d1a;
+      --dark-soft: #2d2924;
+      --gold: #c8a45d;
+      --gold-dark: #8d6f35;
+      --muted: #6d6458;
+      --line: #d6c4a3;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background-color: var(--cream);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    .page {
+      width: min(1100px, 100%);
+      margin: 0 auto;
+      background-color: var(--light-cream);
+      min-height: 100vh;
+      border-left: 8px solid var(--gold);
+      border-right: 8px solid var(--gold);
+    }
+
+    header {
+      background-color: var(--dark);
+      color: var(--light-cream);
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: var(--light-cream);
+      text-decoration: none;
+      margin-left: 24px;
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .page-header {
+      padding: 80px 8% 55px;
+      background:
+        radial-gradient(circle at top right, rgba(200,164,93,0.22), transparent 30%),
+        var(--light-cream);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+      color: var(--gold-dark);
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 6vw, 4.8rem);
+      line-height: 1;
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+
+    .page-header p {
+      color: var(--muted);
+      max-width: 780px;
+      font-size: 1.05rem;
+    }
+
+    .articles-section {
+      background-color: var(--dark);
+      color: var(--light-cream);
+      padding: 70px 8%;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .article-card {
+      background-color: var(--dark-soft);
+      border: 1px solid rgba(255, 248, 236, 0.25);
+      padding: 24px;
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .article-card:hover {
+      border-color: var(--gold);
+    }
+
+    .week {
+      color: var(--gold);
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 0.75rem;
+      margin-bottom: 10px;
+    }
+
+    .article-card h2 {
+      font-size: 1.35rem;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .article-card p {
+      color: rgba(255, 248, 236, 0.75);
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      margin-bottom: 18px;
+    }
+
+    .article-card a {
+      color: var(--gold);
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.78rem;
+    }
+
+    footer {
+      background-color: var(--dark);
+      color: var(--light-cream);
+      padding: 30px 8%;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-top: 1px solid rgba(200, 164, 93, 0.35);
+    }
+
+    footer a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .article-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 16px;
+      }
+
+      .article-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .page {
+        border-left: none;
+        border-right: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div class="logo">Meriya Portfolio</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="weekly-articles.html">Weekly Articles</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <p class="eyebrow">Weekly Articles</p>
+        <h1>Article Summaries & Reflections</h1>
+        <p>
+          This page includes weekly article summaries for my AI in Construction and Facilities Management course. Each article helped me connect emerging technologies with construction, facilities management, project delivery, and professional practice.
+        </p>
+      </section>
+
+      <section class="articles-section">
+        <div class="article-grid">
+
+          <article class="article-card">
+            <div>
+              <p class="week">Week 01</p>
+              <h2>Article Title Goes Here</h2>
+              <p>
+                Write a short summary of the article here. Include the main idea, why the topic matters, and how it connects to AI in construction or facilities management.
+              </p>
+            </div>
+            <a href="#">Read More →</a>
+          </article>
+
+          <article class="article-card">
+            <div>
+              <p class="week">Week 02</p>
+              <h2>Article Title Goes Here</h2>
+              <p>
+                Add your weekly summary here. You can mention the technology discussed, key benefits, possible risks, and what you learned from the article.
+              </p>
+            </div>
+            <a href="#">Read More →</a>
+          </article>
+
+          <article class="article-card">
+            <div>
+              <p class="week">Week 03</p>
+              <h2>Article Title Goes Here</h2>
+              <p>
+                Summarize the article in simple language. Then explain how the reading relates to construction management, facilities operations, or decision-making.
+              </p>
+            </div>
+            <a href="#">Read More →</a>
+          </article>
+
+          <article class="article-card">
+            <div>
+              <p class="week">Week 04</p>
+              <h2>Article Title Goes Here</h2>
+              <p>
+                Add a brief reflection on what stood out to you. Include one practical takeaway that could apply to a real construction or facilities environment.
+              </p>
+            </div>
+            <a href="#">Read More →</a>
+          </article>
+
+          <article class="article-card">
+            <div>
+              <p class="week">Week 05</p>
+              <h2>Article Title Goes Here</h2>
+              <p>
+                Use this card for another weekly article. You can replace the title, summary, and link with your own class article information.
+              </p>
+            </div>
+            <a href="#">Read More →</a>
+          </article>
+
+          <article class="article-card">
+            <div>
+              <p class="week">Week 06</p>
+              <h2>Article Title Goes Here</h2>
+              <p>
+                Add additional weekly summaries as needed. Copy and paste more article cards if your class requires more weekly article entries.
+              </p>
+            </div>
+            <a href="#">Read More →</a>
+          </article>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Meriya Budhathoki</p>
+      <p><a href="index.html">Back to Home</a></p>
+    </footer>
+  </div>
+</body>
+</html>
