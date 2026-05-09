@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Projects | Meriya Portfolio</title>
 
   <style>
@@ -89,33 +90,12 @@
       background-color: var(--white);
       border: 1px solid var(--border);
       border-radius: 12px;
-      overflow: hidden;
+      padding: 28px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.06);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-    }
-
-    .project-image {
-      height: 220px;
-      background-color: #e8e8e8;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      font-weight: bold;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .project-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .project-content {
-      padding: 26px;
+      min-height: 520px;
     }
 
     .tag {
@@ -126,28 +106,38 @@
       margin-bottom: 10px;
     }
 
-    .project-content h2 {
+    .project-card h2 {
       color: var(--dark-green);
-      font-size: 1.45rem;
+      font-size: 1.55rem;
       margin-bottom: 14px;
       line-height: 1.2;
     }
 
-    .project-content p {
+    .project-card p {
       color: var(--muted);
       margin-bottom: 14px;
     }
 
-    .project-content a {
-      display: inline-block;
+    .link-list {
+      margin-top: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .link-list a {
       color: var(--green);
       font-weight: bold;
       text-decoration: none;
-      margin-top: 10px;
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      border-radius: 8px;
+      background-color: var(--cream);
     }
 
-    .project-content a:hover {
+    .link-list a:hover {
       text-decoration: underline;
+      background-color: #eef5ef;
     }
 
     .note {
@@ -200,96 +190,91 @@
     <section class="page-hero">
       <h1>Projects</h1>
       <p>
-        These are the three main project areas from my AI in Construction and Facilities Management course.
+        These are the main project areas from my AI in Construction and Facilities Management course:
+        weekly article analysis, Togal.AI estimating assignments, and my final research project on AI adoption in the AEC industry.
       </p>
     </section>
 
     <section>
       <div class="project-grid">
-        <article class="project-card">
-          <div class="project-image">
-            <img src="images/weekly-articles.jpg" alt="Weekly article collection image"
-                 onerror="this.style.display='none'; this.parentElement.innerHTML='Weekly Article Collection';">
-          </div>
 
-          <div class="project-content">
+        <article class="project-card">
+          <div>
             <p class="tag">Project 01</p>
             <h2>Weekly Article Collection</h2>
 
             <p>
-              This project includes my weekly article summaries for the AI in Construction and Facilities
-              Management course. The articles covered AI in gaming, education risks, AI agents in construction,
-              BIM and AI integration, data center policy, AI regulation, and responsible AI governance.
+              This project includes my weekly article summaries and presentations for the AI in Construction and Facilities Management course.
+              The articles covered AI in gaming, education risks, AI regulation, AI agents, BIM integration, data center policy,
+              investor safeguards, and responsible AI governance.
             </p>
 
             <p>
-              This project helped me connect AI developments to construction topics such as safety, workforce
-              impacts, automation, ethics, project management, and future construction technology.
+              Through this collection, I connected broader AI developments to construction topics such as safety, workforce impacts,
+              automation, ethics, project management, and future AEC technology.
             </p>
+          </div>
 
-            <a href="weekly-articles.html">View Weekly Articles →</a>
+          <div class="link-list">
+            <a href="weekly-articles.html">View Weekly Articles Page →</a>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="project-image">
-            <img src="images/togal-ai-estimating.png" alt="Togal AI estimating assignment image"
-                 onerror="this.style.display='none'; this.parentElement.innerHTML='Togal.AI Estimating Assignment';">
-          </div>
-
-          <div class="project-content">
+          <div>
             <p class="tag">Project 02</p>
-            <h2>AI for Estimating: Togal.AI Example</h2>
+            <h2>AI for Estimating: Togal.AI Assignments</h2>
 
             <p>
-              This assignment focused on experimenting with Togal.AI to explore the capabilities, strengths,
-              and shortcomings of AI-powered estimating tools. The project used construction drawing information
-              to understand how AI can support quantity takeoff and estimating workflows.
+              This project focused on experimenting with Togal.AI to explore the capabilities, strengths, and limitations of AI-powered
+              estimating tools. The assignment used construction drawing information to understand how AI can support quantity takeoff
+              and estimating workflows.
             </p>
 
             <p>
-              The assignment helped me evaluate where AI can save time in preconstruction and estimating, while
-              also showing why human review is important for drawing interpretation, accuracy, and professional
-              judgment.
+              The project helped me evaluate where AI can save time in preconstruction and estimating, while also showing why human
+              review is still important for drawing interpretation, accuracy, and professional judgment.
             </p>
+          </div>
 
-            <a href="files/togal-ai-estimating.pdf" target="_blank">View Assignment PDF →</a>
+          <div class="link-list">
+            <a href="toggle-first floor-2026-02-23_Fire-Station-MB.pdf" target="_blank">Open Fire Station First Floor PDF →</a>
+            <a href="toggle-second floor-2026-02-23_Fire-Station-MB.pdf" target="_blank">Open Fire Station Second Floor PDF →</a>
+            <a href="toggle-floor plan-2026-02-23_Military-Office-MB-Set_v1.pdf" target="_blank">Open Military Office Floor Plan PDF →</a>
+            <a href="toggle.ceiling floor-2026-02-23_Military-Office-MB-Set_v2.pdf" target="_blank">Open Military Office Ceiling Floor PDF →</a>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="project-image">
-            <img src="images/final-project.jpg" alt="Final project AI adoption in AEC image"
-                 onerror="this.style.display='none'; this.parentElement.innerHTML='Final Project: AI Adoption in AEC';">
-          </div>
-
-          <div class="project-content">
+          <div>
             <p class="tag">Project 03</p>
             <h2>Final Project: AI Adoption in the AEC Industry</h2>
 
             <p>
-              My final project, titled <em>Navigating the New Frontier: AI Adoption in the AEC Industry</em>,
-              explored how engineering professionals are currently using AI in their work. The project was
-              based on virtual/email interviews with professionals in bridge/structural engineering and
-              transportation engineering.
+              My final project, titled <em>Navigating the New Frontier: AI Adoption in the AEC Industry</em>, explored how engineering
+              professionals are currently using AI in their work. The project was based on virtual/email interviews with professionals
+              in bridge/structural engineering and transportation engineering.
             </p>
 
             <p>
-              The research found that AI is being used for documentation, data analysis, coding support,
-              dashboards, visualization, structural analysis support, and workflow efficiency. It also emphasized
-              human-in-the-loop decision-making, data quality, organizational support, and responsible AI adoption.
+              The research found that AI is being used for documentation, data analysis, coding support, dashboards, visualization,
+              structural analysis support, and workflow efficiency. It also emphasized human-in-the-loop decision-making, data quality,
+              organizational support, and responsible AI adoption.
             </p>
+          </div>
 
-            <a href="files/final-project-ai-adoption-aec.pdf" target="_blank">View Final Project PDF →</a>
+          <div class="link-list">
+            <a href="AI-Adoption-AEC-Report.docx" target="_blank">Open Final Project Report →</a>
+            <a href="Literature Review.docx" target="_blank">Open Literature Review →</a>
           </div>
         </article>
+
       </div>
 
       <div class="note">
         <p>
-          <strong>File note:</strong> Upload your PDFs into a folder named <strong>files</strong>.
-          Rename your Togal.AI assignment as <strong>togal-ai-estimating.pdf</strong> and your final
-          research paper as <strong>final-project-ai-adoption-aec.pdf</strong>.
+          <strong>Note:</strong> These links use the exact file names uploaded in the main GitHub repository folder.
+          Do not move these files into another folder unless you also update the links.
         </p>
       </div>
     </section>
