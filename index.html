@@ -1,1 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI in Construction & Facilities Management | Home</title>
 
+  <style>
+    :root {
+      --dark-green: #17472c;
+      --green: #2f8f5b;
+      --cream: #f7f2e8;
+      --white: #ffffff;
+      --dark: #1f1f1f;
+      --muted: #666666;
+      --border: #d9d9d9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--cream);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--dark-green);
+      color: var(--white);
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--white);
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-color: var(--dark-green);
+      color: var(--white);
+      padding: 90px 8%;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 4.2rem);
+      margin-bottom: 20px;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      max-width: 850px;
+      margin: 0 auto 30px;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--green);
+      color: var(--white);
+      padding: 13px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #247348;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 2.2rem;
+      color: var(--dark-green);
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      max-width: 800px;
+      margin: 0 auto;
+      color: var(--muted);
+    }
+
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background-color: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      min-height: 260px;
+    }
+
+    .card h3 {
+      color: var(--dark-green);
+      margin-bottom: 12px;
+      font-size: 1.35rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .card a {
+      color: var(--green);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight {
+      background-color: var(--white);
+      border-top: 5px solid var(--green);
+      border-radius: 12px;
+      padding: 35px;
+      max-width: 950px;
+      margin: 0 auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .highlight h2 {
+      color: var(--dark-green);
+      margin-bottom: 15px;
+    }
+
+    .highlight p {
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    footer {
+      background-color: var(--dark-green);
+      color: var(--white);
+      text-align: center;
+      padding: 24px 8%;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 850px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 9px;
+      }
+
+      .overview-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="index.html">Meriya Portfolio</a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="weekly-articles.html">Weekly Articles</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>AI in Construction & Facilities Management</h1>
+      <p>
+        A semester portfolio highlighting my work on artificial intelligence, construction
+        technology, facilities management, AI-powered estimating, weekly article reflections,
+        and AI adoption in the AEC industry.
+      </p>
+      <a class="btn" href="projects.html">View My Projects</a>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>Portfolio Overview</h2>
+        <p>
+          This website organizes my semester work into About Me, Projects, and Weekly Articles.
+          It reflects how I connected artificial intelligence to real construction and facilities
+          management topics.
+        </p>
+      </div>
+
+      <div class="overview-grid">
+        <div class="card">
+          <h3>About Me</h3>
+          <p>
+            Learn about my civil engineering background, graduate studies, professional interests,
+            technical skills, and resume.
+          </p>
+          <a href="about.html">Visit About Me →</a>
+        </div>
+
+        <div class="card">
+          <h3>Projects</h3>
+          <p>
+            View my three main course projects: weekly article collection, Togal.AI estimating
+            assignment, and final project on AI adoption in AEC.
+          </p>
+          <a href="projects.html">View Projects →</a>
+        </div>
+
+        <div class="card">
+          <h3>Weekly Articles</h3>
+          <p>
+            Read my weekly article summaries on AI regulation, AI agents, BIM integration,
+            education risks, gaming, and construction technology.
+          </p>
+          <a href="weekly-articles.html">Read Articles →</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="highlight">
+        <h2>Final Project Highlight</h2>
+        <p>
+          My final project, <strong>Navigating the New Frontier: AI Adoption in the AEC Industry</strong>,
+          explored how engineering professionals use AI in real workflows. The project was based on
+          virtual/email interviews with professionals in bridge/structural engineering and transportation
+          engineering.
+        </p>
+        <p>
+          The project found that AI is currently being used for documentation, coding support, dashboards,
+          visualization, data analysis, and workflow efficiency, while still requiring human judgment for
+          high-stakes engineering decisions.
+        </p>
+        <a class="btn" href="projects.html">See Final Project</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Meriya Budhathoki | AI in Construction & Facilities Management Portfolio</p>
+  </footer>
+</body>
+</html>
