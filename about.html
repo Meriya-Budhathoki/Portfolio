@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>About Me | Meriya Portfolio</title>
 
   <style>
@@ -102,12 +103,13 @@
 
     .profile-photo {
       width: 100%;
-      max-height: 420px;
+      height: 420px;
       object-fit: cover;
       object-position: center top;
       border-radius: 12px;
       margin-bottom: 18px;
       border: 1px solid var(--border);
+      display: block;
     }
 
     .content-card h2,
@@ -201,6 +203,11 @@
       .resume-grid {
         grid-template-columns: 1fr;
       }
+
+      .profile-photo {
+        height: auto;
+        max-height: 520px;
+      }
     }
   </style>
 </head>
@@ -228,8 +235,13 @@
 
     <section>
       <div class="about-grid">
+
         <div class="photo-card">
-          <img class="profile-photo" src="images/about-me.jpg" alt="Meriya Budhathoki profile photo">
+          <img
+            class="profile-photo"
+            src="images/Meriya%20Budhathoki.jpeg"
+            alt="Meriya Budhathoki profile photo"
+          />
 
           <p>
             Graduate student in Construction and Facilities Management with a civil engineering background.
@@ -272,18 +284,21 @@
             <span>Data Analysis</span>
           </div>
         </div>
+
       </div>
     </section>
 
     <section>
       <div class="resume-card">
         <h2>Resume</h2>
+
         <p>
           My resume highlights my civil engineering education, graduate study in Construction and Facilities
           Management, technical experience, and interest in AI-supported construction workflows.
         </p>
 
         <div class="resume-grid">
+
           <div class="resume-box">
             <h3>Education</h3>
             <ul>
@@ -322,6 +337,7 @@
               <li>Responsible AI and human-in-the-loop decision-making</li>
             </ul>
           </div>
+
         </div>
 
         <a class="btn" href="files/resume.pdf" target="_blank">View Resume PDF</a>
