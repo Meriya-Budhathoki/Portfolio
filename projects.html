@@ -1,1 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Meriya Portfolio</title>
 
+  <style>
+    :root {
+      --dark-green: #17472c;
+      --green: #2f8f5b;
+      --cream: #f7f2e8;
+      --white: #ffffff;
+      --dark: #1f1f1f;
+      --muted: #666666;
+      --border: #d9d9d9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--cream);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--dark-green);
+      color: var(--white);
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--white);
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .page-hero {
+      background-color: var(--dark-green);
+      color: var(--white);
+      padding: 70px 8%;
+      text-align: center;
+    }
+
+    .page-hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      margin-bottom: 16px;
+    }
+
+    .page-hero p {
+      max-width: 850px;
+      margin: 0 auto;
+      font-size: 1.08rem;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+
+    .project-card {
+      background-color: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-image {
+      height: 220px;
+      background-color: #e8e8e8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-weight: bold;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 26px;
+    }
+
+    .tag {
+      color: var(--green);
+      font-weight: bold;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .project-content h2 {
+      color: var(--dark-green);
+      font-size: 1.45rem;
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+
+    .project-content p {
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .project-content a {
+      display: inline-block;
+      color: var(--green);
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .project-content a:hover {
+      text-decoration: underline;
+    }
+
+    .note {
+      background-color: var(--white);
+      border-left: 5px solid var(--green);
+      border-radius: 10px;
+      padding: 24px;
+      margin-top: 40px;
+      color: var(--muted);
+    }
+
+    footer {
+      background-color: var(--dark-green);
+      color: var(--white);
+      text-align: center;
+      padding: 24px 8%;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 950px) {
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 9px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="index.html">Meriya Portfolio</a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="weekly-articles.html">Weekly Articles</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Projects</h1>
+      <p>
+        These are the three main project areas from my AI in Construction and Facilities Management course.
+      </p>
+    </section>
+
+    <section>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/weekly-articles.jpg" alt="Weekly article collection image"
+                 onerror="this.style.display='none'; this.parentElement.innerHTML='Weekly Article Collection';">
+          </div>
+
+          <div class="project-content">
+            <p class="tag">Project 01</p>
+            <h2>Weekly Article Collection</h2>
+
+            <p>
+              This project includes my weekly article summaries for the AI in Construction and Facilities
+              Management course. The articles covered AI in gaming, education risks, AI agents in construction,
+              BIM and AI integration, data center policy, AI regulation, and responsible AI governance.
+            </p>
+
+            <p>
+              This project helped me connect AI developments to construction topics such as safety, workforce
+              impacts, automation, ethics, project management, and future construction technology.
+            </p>
+
+            <a href="weekly-articles.html">View Weekly Articles →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/togal-ai-estimating.png" alt="Togal AI estimating assignment image"
+                 onerror="this.style.display='none'; this.parentElement.innerHTML='Togal.AI Estimating Assignment';">
+          </div>
+
+          <div class="project-content">
+            <p class="tag">Project 02</p>
+            <h2>AI for Estimating: Togal.AI Example</h2>
+
+            <p>
+              This assignment focused on experimenting with Togal.AI to explore the capabilities, strengths,
+              and shortcomings of AI-powered estimating tools. The project used construction drawing information
+              to understand how AI can support quantity takeoff and estimating workflows.
+            </p>
+
+            <p>
+              The assignment helped me evaluate where AI can save time in preconstruction and estimating, while
+              also showing why human review is important for drawing interpretation, accuracy, and professional
+              judgment.
+            </p>
+
+            <a href="files/togal-ai-estimating.pdf" target="_blank">View Assignment PDF →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/final-project.jpg" alt="Final project AI adoption in AEC image"
+                 onerror="this.style.display='none'; this.parentElement.innerHTML='Final Project: AI Adoption in AEC';">
+          </div>
+
+          <div class="project-content">
+            <p class="tag">Project 03</p>
+            <h2>Final Project: AI Adoption in the AEC Industry</h2>
+
+            <p>
+              My final project, titled <em>Navigating the New Frontier: AI Adoption in the AEC Industry</em>,
+              explored how engineering professionals are currently using AI in their work. The project was
+              based on virtual/email interviews with professionals in bridge/structural engineering and
+              transportation engineering.
+            </p>
+
+            <p>
+              The research found that AI is being used for documentation, data analysis, coding support,
+              dashboards, visualization, structural analysis support, and workflow efficiency. It also emphasized
+              human-in-the-loop decision-making, data quality, organizational support, and responsible AI adoption.
+            </p>
+
+            <a href="files/final-project-ai-adoption-aec.pdf" target="_blank">View Final Project PDF →</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="note">
+        <p>
+          <strong>File note:</strong> Upload your PDFs into a folder named <strong>files</strong>.
+          Rename your Togal.AI assignment as <strong>togal-ai-estimating.pdf</strong> and your final
+          research paper as <strong>final-project-ai-adoption-aec.pdf</strong>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Meriya Budhathoki | Projects</p>
+  </footer>
+</body>
+</html>
