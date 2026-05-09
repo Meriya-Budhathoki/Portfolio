@@ -1,8 +1,336 @@
-<div class="photo-card">
-  <div class="photo-box">
-    Add your photo here
-  </div>
-  <p>
-    Graduate student in Construction and Facilities Management with a civil engineering background.
-  </p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Meriya Portfolio</title>
+
+  <style>
+    :root {
+      --dark-green: #17472c;
+      --green: #2f8f5b;
+      --cream: #f7f2e8;
+      --white: #ffffff;
+      --dark: #1f1f1f;
+      --muted: #666666;
+      --border: #d9d9d9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--cream);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--dark-green);
+      color: var(--white);
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--white);
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .page-hero {
+      background-color: var(--dark-green);
+      color: var(--white);
+      padding: 70px 8%;
+      text-align: center;
+    }
+
+    .page-hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      margin-bottom: 16px;
+    }
+
+    .page-hero p {
+      max-width: 850px;
+      margin: 0 auto;
+      font-size: 1.08rem;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 35px;
+      align-items: start;
+    }
+
+    .photo-card,
+    .content-card,
+    .resume-card {
+      background-color: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .photo-card {
+      text-align: center;
+    }
+
+    .profile-photo {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 12px;
+      margin-bottom: 18px;
+      border: 1px solid var(--border);
+    }
+
+    .content-card h2,
+    .resume-card h2 {
+      color: var(--dark-green);
+      margin-bottom: 16px;
+      font-size: 2rem;
+    }
+
+    .content-card p,
+    .resume-card p {
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .skills span {
+      background-color: var(--cream);
+      color: var(--dark-green);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 8px 14px;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    .resume-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .resume-box {
+      background-color: var(--cream);
+      padding: 18px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .resume-box h3 {
+      color: var(--dark-green);
+      margin-bottom: 8px;
+    }
+
+    .resume-box ul {
+      margin-left: 18px;
+      color: var(--muted);
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--green);
+      color: var(--white);
+      padding: 13px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 18px;
+    }
+
+    .btn:hover {
+      background-color: #247348;
+    }
+
+    footer {
+      background-color: var(--dark-green);
+      color: var(--white);
+      text-align: center;
+      padding: 24px 8%;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 850px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 9px;
+      }
+
+      .about-grid,
+      .resume-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="index.html">Meriya Portfolio</a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="weekly-articles.html">Weekly Articles</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>About Me</h1>
+      <p>
+        Civil engineering background, graduate study in Construction and Facilities Management,
+        and interest in using AI to improve construction and infrastructure workflows.
+      </p>
+    </section>
+
+    <section>
+      <div class="about-grid">
+        <div class="photo-card">
+          <img class="profile-photo" src="images/about-me.jpg" alt="Meriya Budhathoki profile photo">
+
+          <p>
+            Graduate student in Construction and Facilities Management with a civil engineering background.
+          </p>
+        </div>
+
+        <div class="content-card">
+          <h2>Hello, I’m Meriya Budhathoki.</h2>
+
+          <p>
+            I am a graduate student in Construction and Facilities Management with a background in civil
+            engineering. My academic and professional interests include construction technology,
+            transportation, infrastructure, facilities management, estimating, data analysis, and
+            AI-supported decision-making.
+          </p>
+
+          <p>
+            Through the AI in Construction and Facilities Management course, I explored how artificial
+            intelligence can help construction professionals improve project communication, automate
+            repetitive tasks, support estimating workflows, analyze project data, and improve safety and
+            planning.
+          </p>
+
+          <p>
+            I am especially interested in responsible AI adoption in the architecture, engineering, and
+            construction industry. I believe AI can be a strong productivity tool, but it should support
+            human expertise rather than replace professional judgment.
+          </p>
+
+          <div class="skills">
+            <span>Civil Engineering</span>
+            <span>Construction Management</span>
+            <span>Facilities Management</span>
+            <span>AI Tools</span>
+            <span>Estimating</span>
+            <span>Transportation</span>
+            <span>AutoCAD</span>
+            <span>Civil 3D</span>
+            <span>Bluebeam</span>
+            <span>Data Analysis</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="resume-card">
+        <h2>Resume</h2>
+        <p>
+          My resume highlights my civil engineering education, graduate study in Construction and Facilities
+          Management, technical experience, and interest in AI-supported construction workflows.
+        </p>
+
+        <div class="resume-grid">
+          <div class="resume-box">
+            <h3>Education</h3>
+            <ul>
+              <li>MS in Construction and Facilities Management, UNC Charlotte</li>
+              <li>Bachelor’s degree in Civil Engineering</li>
+              <li>Course focus: AI in Construction and Facilities Management</li>
+            </ul>
+          </div>
+
+          <div class="resume-box">
+            <h3>Professional Focus</h3>
+            <ul>
+              <li>Construction and infrastructure systems</li>
+              <li>Transportation and civil engineering workflows</li>
+              <li>AI adoption in AEC firms</li>
+              <li>Project communication and documentation</li>
+            </ul>
+          </div>
+
+          <div class="resume-box">
+            <h3>Technical Skills</h3>
+            <ul>
+              <li>AutoCAD, Civil 3D, Bluebeam</li>
+              <li>Construction estimating and quantity takeoff</li>
+              <li>AI tools for writing, coding, dashboards, and automation</li>
+              <li>Data visualization and project analysis</li>
+            </ul>
+          </div>
+
+          <div class="resume-box">
+            <h3>AI Course Work</h3>
+            <ul>
+              <li>Weekly AI article summaries</li>
+              <li>Togal.AI estimating assignment</li>
+              <li>Final research project on AI adoption in AEC</li>
+              <li>Responsible AI and human-in-the-loop decision-making</li>
+            </ul>
+          </div>
+        </div>
+
+        <a class="btn" href="files/resume.pdf" target="_blank">View Resume PDF</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Meriya Budhathoki | About Me</p>
+  </footer>
+</body>
+</html>
